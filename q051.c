@@ -1,0 +1,35 @@
+/* Q51: Write a program to print the following pattern:
+    5
+   45
+  345
+ 2345
+12345
+
+Sample Test Cases:
+Input 1:
+
+Output 1:
+    5
+   45
+  345
+ 2345
+12345
+
+*/
+#include <stdio.h>
+
+int main(void)
+{
+    for(int i = 5; i >= 1; i --)
+    {
+        for (int d = 5; d > 5 - i + 1; d --)
+        {
+            printf(" ");
+        }
+        for(int r = i; r <= 5; r ++)
+        {
+            printf("%i", r);
+        }
+        printf("\n");
+    }
+}
